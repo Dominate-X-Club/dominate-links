@@ -1,7 +1,10 @@
 import { Button } from '@/components/ui/button';
 import { currentUser } from '@clerk/nextjs/server';
 
-export default async function Page() {
+export default async function Page({ params }: { params: { username: string } }) {
+
+  console.log("username inside dashboard", params.username);
+
   const user = await currentUser();
 
 
@@ -17,5 +20,5 @@ export default async function Page() {
   return <div>
     Hello {user?.firstName}
     <Button>Hello World</Button>
-    </div>;
+  </div>;
 }
