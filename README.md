@@ -1,76 +1,120 @@
-Here's a README.md template for your Next.js project that outlines the steps to clone the repository and start the local server, including setting up the necessary configurations:
-
-```markdown
-# Project Name
-
+# Dominate Links
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 ## Introduction
-Briefly introduce your project here. You can describe what your project does and the main features it offers.
+
+The **Dominate Links** is a web application that allows users to create personalized pages containing multiple links. It showcases the use of authentication with Clerk, database interaction with Prisma, and UI design with Shadcn Next.js and Tailwind CSS.
 
 ## Prerequisites
-Before you begin, ensure you have the following installed:
-- [Node.js](https://nodejs.org/)
-- [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
+
+Ensure you have the following prerequisites installed before getting started:
+
+- [Node.js](https://nodejs.org/) (version 16+)
+- [npm](https://www.npmjs.com/), [Yarn](https://yarnpkg.com/), or [pnpm](https://pnpm.io/)
 - [Git](https://git-scm.com/)
-- A Clerk account (for handling authentication and user management)
+- A Clerk account for authentication and user management
+
+## Technologies
+- Next js - Frontend and backend
+- Tailwind - CSS Framework
+- Shadcn - UI Component Library
+- Clerk - Authentication
+- Prisma - ORM
+- Postgre SQL - Database
 
 ## Getting Started
 
+Follow these steps to set up and run the project on your local environment:
+
 ### Step 1: Clone the Repository
-To get started with this project, first clone the repository to your local machine:
+
+Clone the project repository and navigate to the project directory:
+
 ```bash
-git clone https://your-repository-url.git
-cd [project-directory]
+git clone https://github.com/rohitt-gupta/dominate-links.git
+cd dominate-links
 ```
 
-### Step 2: Install Dependencies
-Navigate into the project directory and install the required packages:
+### **Step 2: Install Dependencies**
+
+Install the necessary project dependencies:
+
 ```bash
 npm install
 # or
 yarn install
+# or
+pnpm install
 ```
 
-### Step 3: Setup the Environment Variables
-Create a `.env.local` file in the root directory of your project and add the following environment variables:
-```plaintext
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
-CLERK_SECRET_KEY=your_clerk_secret_key
-DATABASE_URL=your_database_connection_string
+### **Step 3: Set Up Environment Variables**
+
+Rename **`.env.example`** to **`.env.local`** file in the root directory and add the following environment variables:
+
+```
+DATABASE_URL="your_database_connection_string"
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY="your_clerk_publishable_key"
+CLERK_SECRET_KEY="your_clerk_secret_key"
+NEXT_PUBLIC_CLERK_SIGN_IN_URL="/sign-in"
+NEXT_PUBLIC_CLERK_SIGN_UP_URL="/sign-up"
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL="/dashboard"
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL="/new-user"
+CLERK_WEBHOOK="your_clerk_webhook_secret"
 ```
 
-### Step 4: Setup the Database
-Ensure your database is configured according to the settings in your `prisma/schema.prisma` file. Run the following command to update your database schema:
+### **Step 4: Set Up the Database**
+
+To update your database schema with Prisma, run the following command:
+
 ```bash
-npx prisma migrate dev
+npx prisma db push
 ```
 
-### Step 5: Start the Application
-You can now start the development server by running:
+### **Step 5: Start the Development Server**
+
+Run the development server to start the application locally:
+
 ```bash
 npm run dev
 # or
 yarn dev
+# or
+pnpm dev
 ```
 
-### Step 6: Setup the Clerk Webhook
-For local development and testing of Clerk webhooks, you can use tools like ngrok:
-1. Install ngrok and start it on your local machine to expose your local server:
-   ```bash
-   ngrok http 3000
-   ```
-2. Copy the HTTPS forwarding address provided by ngrok and use it to configure the webhook URL in your Clerk dashboard.
+### **Step 6: Set Up Clerk Webhooks (Optional)**
 
-## Usage
-Describe how to use your application or any post-installation steps needed to fully utilize the project.
+To test Clerk webhooks locally, you can use ngrok to expose your local server:
 
-## Contributing
-Encourage contributions and provide any necessary guidelines for contributing to your project.
+1. Install and start ngrok:
+    
+```bash
+ngrok http 3000
+```
+    
+2. Copy the HTTPS forwarding address from ngrok and use it to set the webhook URL in your Clerk dashboard.
+
+## **Usage**
+
+After setting up the application, users can sign in, sign up, and create personalized link pages. To customize the application, edit the components in the **`src`** directory.
+
+## **Contributing**
+
+Contributions are welcome! If you'd like to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch with a descriptive name.
+3. Make your changes and commit them with clear commit messages.
+4. Open a pull request and describe your changes in detail.
+
+Ensure your code follows best practices, includes appropriate tests, and has clear documentation.
 
 ## License
-Specify the license under which your project is made available.
 
-## Contact
-Provide contact information or links to social media for users needing support or wishing to connect.
-```
+[MIT](https://choosealicense.com/licenses/mit/)
 
-This README includes comprehensive steps from cloning the repo to setting up the environment and running the server, which should be helpful for new contributors or users of your project.
+## **Contact**
+
+If you have any questions or need support, you can reach out to:
+- Twitter: [@dominateXclub](https://twitter.com/dominateXclub)
+
+Thank you for using the **Dominate Links** project!
