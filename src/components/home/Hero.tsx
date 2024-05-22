@@ -20,7 +20,7 @@ const Hero = () => {
         </Link>
         </SignedIn>
         <SignedOut>
-        <Link href="/signin">
+        <Link href="/sign-in">
             <Button className="relative rounded-lg">Sign In</Button>
         </Link>
         </SignedOut>
