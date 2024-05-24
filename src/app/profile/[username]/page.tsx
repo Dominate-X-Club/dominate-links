@@ -73,9 +73,9 @@ const page = ({ params }: { params: { username: string } }) => {
         <p className="text-center mt-2">{User.bio}</p>
       </div>
       <div className="mt-8 flex flex-col gap-4 items-center justify-between w-full max-w-xs">
-        {User.links.map(({ name, url, image, description }) => {
+        {User.links.map(({ name, url, image, description,id }) => {
           return (
-            <TooltipProvider>
+            <TooltipProvider key={id}>
               <Tooltip>
                 <TooltipTrigger>
                   <div className="min-w-[20rem] bg-gray-100 hover:bg-gray-200 my-2 p-4  rounded-lg shadow-md flex items-center justify-between space-x-4">
