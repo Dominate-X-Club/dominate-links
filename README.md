@@ -8,8 +8,8 @@ The **Dominate Links** is a web application that allows users to create personal
 
 Ensure you have the following prerequisites installed before getting started:
 
-- [Node.js](https://nodejs.org/) (version 16+)
-- [npm](https://www.npmjs.com/), [Yarn](https://yarnpkg.com/), or [pnpm](https://pnpm.io/)
+- [Node.js](https://nodejs.org/) (version 18+)
+- [pnpm](https://pnpm.io/)
 - [Git](https://git-scm.com/)
 - A Clerk account for authentication and user management
 
