@@ -1,5 +1,4 @@
 import { PrismaClient } from "@prisma/client";
-import { globalThis } from 'typescript';
 
 // PrismaClient is attached to the `global` object in development to prevent
 // exhausting your database connection limit.
