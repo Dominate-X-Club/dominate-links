@@ -1,6 +1,6 @@
 # Dominate Links
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-## Introduction
+## Introduction Dominate Links
 
 The **Dominate Links** is a web application that allows users to create personalized pages containing multiple links. It showcases the use of authentication with Clerk, database interaction with Prisma, and UI design with Shadcn Next.js and Tailwind CSS.
 
@@ -8,8 +8,8 @@ The **Dominate Links** is a web application that allows users to create personal
 
 Ensure you have the following prerequisites installed before getting started:
 
-- [Node.js](https://nodejs.org/) (version 16+)
-- [npm](https://www.npmjs.com/), [Yarn](https://yarnpkg.com/), or [pnpm](https://pnpm.io/)
+- [Node.js](https://nodejs.org/) (version 18+)
+- [pnpm](https://pnpm.io/)
 - [Git](https://git-scm.com/)
 - A Clerk account for authentication and user management
 
