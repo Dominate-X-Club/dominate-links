@@ -33,6 +33,7 @@
 -   [Overview](#overview) 🚀
 -   [Features](#features) ✨
 -   [Technologies](#technologies) 🛠
+-   [Flowchart](#flowchart) 📦
 -   [Contributing](#contributing) 🤝
 -   [License](#license) 📄
 -   [Contact](#contact) 📧
@@ -78,6 +79,15 @@ Ensure you have the following prerequisites installed before getting started:
 - **Authentication** - [Clerk](https://clerk.dev/)
 - **ORM** - [Prisma](https://www.prisma.io/)
 - **Database** - [PostgreSQL](https://www.postgresql.org/)
+
+
+## Flowchart 📦
+
+### Module Level flow
+![Module Level Flow](./flowcharts/module-level-flowchart.png)
+
+### User Actions flow
+![User Actions Flow](./flowcharts/user-actions-flowchart.png)
 
 
 ## Contributing 🤝
