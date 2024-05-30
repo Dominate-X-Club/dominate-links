@@ -1,4 +1,6 @@
+import prisma from "@/utils/db";
 import { FC } from "react";
+import PublicPage from "./_components/PublicPage";
 
 export interface pageProps {
   params: {
@@ -6,11 +8,25 @@ export interface pageProps {
   }
 }
 
-const page: FC<pageProps> = ({ params }) => {
-  console.log("username inside public page", params.username);
+const page: FC<pageProps> = async({ params }) => {
+
+  
+  const userData=await prisma.user.findUnique({
+    where:{
+      username:params.username
+    },
+    include:{
+      links:true
+    }
+  });
+  if(!userData){
+    return (<h1>Wrong Username</h1>)
+  }
+
+
   return (
     <div>
-      oublic page for showing links {params.username}
+      <PublicPage user={userData}/>
     </div>
   );
 };
