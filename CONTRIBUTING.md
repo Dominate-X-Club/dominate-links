@@ -80,7 +80,7 @@ The commit message should be descriptive and should be one of the following type
 #### ❗Important
 Before doing any commit, make sure you run the following command to check for any linting errors:
 ```bash
-pnmp tsc
+pnpm tsc
 ```
 If there are any errors, please fix them before committing your changes.
 
