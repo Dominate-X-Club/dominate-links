@@ -25,7 +25,7 @@ Ensure you have the following prerequisites installed before getting started:
 - [Node.js](https://nodejs.org/) (version 18+)
 - [pnpm](https://pnpm.io/)
 - [Git](https://git-scm.com/)
-- A Clerk account for authentication and user management
+A [Clerk](https://clerk.com/) account for authentication and user management
 
 ### Technologies
 
