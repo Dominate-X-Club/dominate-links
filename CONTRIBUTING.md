@@ -77,12 +77,12 @@ The commit message should be descriptive and should be one of the following type
 - **STYLE**: format code according to Prettier standards
 - **TEST**: add unit tests for user authentication
 
-#### ❗Important
-Before doing any commit, make sure you run the following command to check for any linting errors:
-```bash
-pnpm tsc
-```
-If there are any errors, please fix them before committing your changes.
+> [!IMPORTANT]
+> Before doing any commit, make sure you run the following command to check for any linting errors:
+> ```bash
+> pnpm tsc
+> ```
+> If there are any errors, please fix them before committing your changes.
 
 ### Step 4: Push Changes
 Push your changes to the remote repository:
