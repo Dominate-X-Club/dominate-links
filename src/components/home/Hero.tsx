@@ -15,7 +15,7 @@ const Hero = () => {
         </Link>
         <div className="ml-auto flex items-center space-x-4">
         <SignedIn>
-        <Link href="/dashboard">
+        <Link href="/dashboard/links">
             <Button className="relative rounded-lg">Dashboard</Button>
         </Link>
         </SignedIn>
