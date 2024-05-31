@@ -7,6 +7,7 @@ import EditLinkDialog from "./EditLinkDialog";
 import { AlertDialog, AlertDialogTrigger } from "@/components/ui/alert-dialog";
 import DeleteLinkDialog from "./DeleteLinkDialog";
 import { Link as LinkType } from "@prisma/client";
+import Image from "next/image";
 
 interface LinkCardProps {
   link:LinkType;
@@ -18,7 +19,7 @@ const LinkCard: FC<LinkCardProps> = ({link,deleteLink,updateLink}) => {
   return (
     <div className="w-full max-w-md shadow-md rounded-md transition-shadow">
       <div className="grid grid-cols-[64px_1fr] gap-4 items-center p-2">
-        <img
+        <Image
           alt="Link Image"
           className="aspect-square object-cover rounded-md mx-2"
           height={64}

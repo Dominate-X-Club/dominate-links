@@ -23,11 +23,13 @@ const PublicPage: FC<PublicPageProps> = ({ user }) => {
   return (
     <div className="flex flex-col items-center p-4 pt-14 min-h-screen">
       <div className="flex flex-col items-center">
-        <img
+        <Image
           src={user.profilePic}
+          height={96}
+          width={96}
           className="rounded-full h-24"
           alt="Lakshya Runwal"
-        ></img>
+        ></Image>
         <h1 className="mt-4 font-bold text-4xl text-center">{user.name}</h1>
         <p className="bg-gray-200 mt-2 px-3 py-1 rounded-lg text-sm">
           @{user.username}
@@ -41,7 +43,7 @@ const PublicPage: FC<PublicPageProps> = ({ user }) => {
               <Tooltip>
                 <TooltipTrigger>
                   <div className="flex justify-between items-center space-x-4 bg-gray-100 hover:bg-gray-200 shadow-md my-2 p-4 rounded-lg min-w-[20rem]">
-                    <img src={image} alt={name} className="w-8 h-8" />
+                    <Image src={image} alt={name} height={32} width={32} />
                     <h2 className="font-bold">{name}</h2>
                     <Link
                       href={url}
