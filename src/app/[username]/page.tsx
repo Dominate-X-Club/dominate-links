@@ -8,25 +8,26 @@ export interface pageProps {
   }
 }
 
-const page: FC<pageProps> = async({ params }) => {
+const page: FC<pageProps> = async ({ params }) => {
 
-  
-  const userData=await prisma.user.findUnique({
-    where:{
-      username:params.username
+
+  const userData = await prisma.user.findUnique({
+    where: {
+      username: params.username
     },
-    include:{
-      links:true
+    include: {
+      links: true
     }
   });
-  if(!userData){
+
+  if (!userData) {
     return (<h1>Wrong Username</h1>)
   }
 
 
   return (
     <div>
-      <PublicPage user={userData}/>
+      <PublicPage user={userData} />
     </div>
   );
 };
