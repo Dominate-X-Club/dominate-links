@@ -1,6 +1,7 @@
 import prisma from "@/utils/db";
 import { FC } from "react";
 import PublicPage from "./_components/PublicPage";
+import { redirect } from "next/navigation";
 
 export interface pageProps {
   params: {
@@ -21,7 +22,7 @@ const page: FC<pageProps> = async ({ params }) => {
   });
 
   if (!userData) {
-    return (<h1>Wrong Username</h1>)
+    redirect('/')
   }
 
 
