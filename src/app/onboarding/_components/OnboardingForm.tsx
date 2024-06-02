@@ -57,7 +57,7 @@ const OnboardingForm: FC<PageProps> = ({ data }) => {
         title: "User Successfully onboarded",
         variant: 'default',
       })
-      router.push(`/dashboard/${session?.user.id}`);
+      router.push(`/dashboard/links`);
     } else {
       setError('username', { type: 'custom', message: response.errors.message })
     }

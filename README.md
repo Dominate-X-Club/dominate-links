@@ -1,120 +1,131 @@
-# Dominate Links
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-## Introduction Dominate Links
+<a href="https://github.com/rohitt-gupta/dominate-links" title="Dominate Links">
+<p align="center">
+  <img src="./public/logo.png" alt="Dominate X Club Logo" height="150px" style="border-radius:20px">
+</p>
+<h1 align="center">Dominate Links</h1>
+</a>
 
-The **Dominate Links** is a web application that allows users to create personalized pages containing multiple links. It showcases the use of authentication with Clerk, database interaction with Prisma, and UI design with Shadcn Next.js and Tailwind CSS.
+<p align="center">
+<img src="https://img.shields.io/github/license/rohitt-gupta/dominate-links&style=for-the-badge" alt="MIT License">
+<br>
+<img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=for-the-badge" alt="TypeScript Badge">
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=for-the-badge" alt="JavaScript Badge">
+<img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=fff&style=for-the-badge" alt="CSS3 Badge">
+<img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" alt="NodeJS">
+<img src="https://img.shields.io/badge/pnpm-%234a4a4a.svg?style=for-the-badge&logo=pnpm&logoColor=f69220" alt="PNPM">
+<img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white" alt="Next JS">
+<img src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+<img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="TailwindCSS">
+<img src="https://img.shields.io/badge/shadcn%2Fui-000000?style=for-the-badge&logo=shadcnui&logoColor=white" alt="Shadcn">
+<img src="https://img.shields.io/badge/Clerk-6C47FF?logo=clerk&logoColor=fff&style=for-the-badge" alt="Clerk Badge">
+<img src="https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=fff&style=for-the-badge" alt="Prisma Badge">
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=fff&style=for-the-badge" alt="PostgreSQL Badge">
+</p>
 
-## Prerequisites
+<p align="center" style="font-style:italic">
+<b>Dominate Links</b> is a web application that allows users to create personalized pages containing multiple links.
+</p>
+
+---
+
+## Table of Contents
+
+-   [Overview](#overview) 🚀
+-   [Features](#features) ✨
+-   [Technologies](#technologies) 🛠
+-   [Flowchart](#flowchart) 📦
+-   [Contributing](#contributing) 🤝
+-   [License](#license) 📄
+-   [Contact](#contact) 📧
+-   [Acknowledgments](#acknowledgments) 🙏
+
+---
+
+## Overview 🚀
+
+Dominate Links is a web application that allows users to create personalized pages containing multiple links. It serves as a centralized hub for users to share various links, such as social media profiles, websites, portfolios, and more. With Dominate Links, users can create a single, easy-to-remember link to share with their audience, simplifying the process of sharing multiple links across different platforms.
+
+## Features ✨
+
+- **👤 Personalized Pages**: Each user is assigned a personalized page based on their chosen username, resulting in a unique custom URL for easy access.
+
+- **🔍 Preview Links**: Users can preview how their links will be displayed on a mobile screen.
+
+- **🚀 Easy Sharing**: Users can easily share their personalized pages with others through a single link.
+
+- **🎨 Customization Options**: Users have the option to customize the appearance of their pages with themes and colors.
+
+- **📊 Analytics**: Provides insights into link clicks and user interactions through built-in analytics.
+
+- **📱 Responsive Design**: Responsive design ensures optimal user experience across different devices and screen sizes.
+
+
+## Technologies 🛠
+
+### Prerequisites
 
 Ensure you have the following prerequisites installed before getting started:
 
-- [Node.js](https://nodejs.org/) (version 18+)
+- [Node.js](https://nodejs.org/) (`18.0v+`)
 - [pnpm](https://pnpm.io/)
 - [Git](https://git-scm.com/)
-- A Clerk account for authentication and user management
+- A [Clerk](https://clerk.com/) account for authentication and user management
 
-## Technologies
-- Next js - Frontend and backend
-- Tailwind - CSS Framework
-- Shadcn - UI Component Library
-- Clerk - Authentication
-- Prisma - ORM
-- Postgre SQL - Database
+### Tech Stack
 
-## Getting Started
+- **Frontend and Backend** - [Next.js](https://nextjs.org/)
+- **CSS Framework** - [Tailwind CSS](https://tailwindcss.com/)
+- **UI Component Library** - [Shadcn](https://shadcn.dev/)
+- **Authentication** - [Clerk](https://clerk.dev/)
+- **ORM** - [Prisma](https://www.prisma.io/)
+- **Database** - [PostgreSQL](https://www.postgresql.org/)
 
-Follow these steps to set up and run the project on your local environment:
 
-### Step 1: Clone the Repository
+## Flowchart 📦
 
-Clone the project repository and navigate to the project directory:
+### Module Level flow
+![Module Level Flow](./flowcharts/module-level-flowchart.png)
 
-```bash
-git clone https://github.com/rohitt-gupta/dominate-links.git
-cd dominate-links
-```
+### User Actions flow
+![User Actions Flow](./flowcharts/user-actions-flowchart.png)
 
-### **Step 2: Install Dependencies**
 
-Install the necessary project dependencies:
+## Contributing 🤝
 
-```bash
-npm install
-# or
-yarn install
-# or
-pnpm install
-```
+We are excited to have you contribute to the **Dominate Links** project! Before contributing, please read the [Code of Conduct](CODE_OF_CONDUCT.md) to ensure a positive and inclusive environment for the project.
 
-### **Step 3: Set Up Environment Variables**
+> Join the **Dominate X Club** [Discord server](https://discord.gg/ccnBJXSKt7) to connect with other contributors and stay updated on the project's development.
+> 🔗 [discord.gg/ccnBJXSKt7](https://discord.gg/ccnBJXSKt7)
 
-Rename **`.env.example`** to **`.env.local`** file in the root directory and add the following environment variables:
+### **How to Contribute**
 
-```
-DATABASE_URL="your_database_connection_string"
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY="your_clerk_publishable_key"
-CLERK_SECRET_KEY="your_clerk_secret_key"
-NEXT_PUBLIC_CLERK_SIGN_IN_URL="/sign-in"
-NEXT_PUBLIC_CLERK_SIGN_UP_URL="/sign-up"
-NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL="/dashboard"
-NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL="/new-user"
-CLERK_WEBHOOK="your_clerk_webhook_secret"
-```
+To contribute to **Dominate Links**, check out the [Contributing Guidelines](CONTRIBUTING.md).
 
-### **Step 4: Set Up the Database**
+And if you like the project, but just don't have time to contribute, that's fine. There are other easy ways to support the project and show your appreciation, which we would also be very happy about:
+- Star the project
+- Tweet about it and make sure to mention [@dominateXclub](https://x.com/dominateXclub) on **X**.
+- Refer this project in your project's readme.
+- Mention the project at local meetups and tell your friends/colleagues.
 
-To update your database schema with Prisma, run the following command:
+## License 📄
 
-```bash
-npx prisma db push
-```
+This project is licensed under the **MIT License** 🔐 - see the [LICENSE](LICENSE)  file for details.
 
-### **Step 5: Start the Development Server**
+## Contact 📧
 
-Run the development server to start the application locally:
+If you have any questions or need support, you can reach out to us through the following channels:
+[![Twitter](https://img.shields.io/badge/dominateXclub-black?logo=X&logoColor=white&style=for-the-badge)](https://x.com/dominateXclub)
+[![Twitter](https://img.shields.io/badge/DominateXClub-5865F2?logo=discord&logoColor=white&style=for-the-badge)](https://discord.gg/ccnBJXSKt7)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Acknowledgments 🙏
 
-### **Step 6: Set Up Clerk Webhooks (Optional)**
+We would like to express our gratitude to the following contributors for their valuable contributions to Dominate Links:
 
-To test Clerk webhooks locally, you can use ngrok to expose your local server:
+<a href="https://github.com/rohitt-gupta"><img src="https://avatars.githubusercontent.com/u/81370462?v=4" width="50px" height="auto" alt="Rohit Gupta"></a><a href="https://github.com/lakshya-roonwal"><img src="https://avatars.githubusercontent.com/u/76898541?v=4" width="50px" height="auto" alt="Lakshya Roonwal"></a><a href="https://github.com/Param302"><img src="https://avatars.githubusercontent.com/u/76559816?v=4" width="50px" height="auto" alt="Parampreet Singh"></a>
 
-1. Install and start ngrok:
-    
-```bash
-ngrok http 3000
-```
-    
-2. Copy the HTTPS forwarding address from ngrok and use it to set the webhook URL in your Clerk dashboard.
 
-## **Usage**
+---
 
-After setting up the application, users can sign in, sign up, and create personalized link pages. To customize the application, edit the components in the **`src`** directory.
-
-## **Contributing**
-
-Contributions are welcome! If you'd like to contribute, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch with a descriptive name.
-3. Make your changes and commit them with clear commit messages.
-4. Open a pull request and describe your changes in detail.
-
-Ensure your code follows best practices, includes appropriate tests, and has clear documentation.
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
-
-## **Contact**
-
-If you have any questions or need support, you can reach out to:
-- Twitter: [@dominateXclub](https://twitter.com/dominateXclub)
-
-Thank you for using the **Dominate Links** project!
+<p align="center">
+	Developed with ❤️ by The <a href="https://x.com/i/communities/1769406952939864575"><strong>Dominate X Club</strong></a>
+</p>
