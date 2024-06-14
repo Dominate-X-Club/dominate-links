@@ -61,11 +61,13 @@ const page = ({ params }: { params: { username: string } }) => {
   return (
     <div className="min-h-screen flex flex-col items-center  p-4 pt-14">
       <div className="flex flex-col items-center">
-        <img
+        <Image
+          width={96}
+          height={96}
           src={User.profilePic}
           className="h-24 rounded-full"
           alt="Lakshya Runwal"
-        ></img>
+        />
         <h1 className="text-4xl font-bold mt-4 text-center">{User.name}</h1>
         <p className="rounded-lg mt-2 bg-gray-200 px-3 py-1 text-sm">
           @{User.username}

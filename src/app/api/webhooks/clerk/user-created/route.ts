@@ -13,7 +13,7 @@ export async function POST(request: Request) {
         id: payload.data.id,
         name: payload.data.first_name + " " + payload.data.last_name,
         email: payload.data.email_addresses[0].email_address,
-        username: payload.data.username ?? "",
+        username: payload?.data?.username ?? "",
         profilePic: payload.data.image_url
       }
     })

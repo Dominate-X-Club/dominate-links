@@ -6,6 +6,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { Link as LinkType, User } from "@prisma/client";
+import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 
@@ -30,10 +31,12 @@ const PhoneBody: FC<PhoneBodyProps> = ({links,user}) => {
         <div className="mt-10 px-4 py-2 space-y-4 overflow-y-auto h-full">
           <div className="flex flex-col items-center p-4 pt-8">
             <div className="flex flex-col items-center">
-              <img
+              <Image
                 src={user.profilePic}
+                width={96}
+                height={96}
                 className="h-24 rounded-full"
-                alt="Lakshya Runwal"
+                alt={user.username}
               />
               <h1 className="text-xl font-bold mt-4 text-center">
                 {user.name}
@@ -49,7 +52,7 @@ const PhoneBody: FC<PhoneBodyProps> = ({links,user}) => {
                   <Tooltip>
                     <TooltipTrigger>
                       <div className="min-w-[15rem] bg-gray-100 hover:bg-gray-200 p-2 rounded-lg shadow-md flex items-center justify-between space-x-4">
-                        <img src={image} alt={name} className="w-8 h-8"/>
+                        <Image width={32} height={32} src={image} alt={name} className="w-8 h-8"/>
                         <h2 className="font-bold">{name}</h2>
                         <Link
                           href={url}
